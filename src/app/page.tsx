@@ -33,7 +33,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex-1 flex flex-col items-start w-full lg:pr-8"
+          className="flex-1 flex flex-col items-start w-full max-w-2xl lg:max-w-none lg:pr-8"
         >
           <h1 className="text-5xl md:text-6xl font-light tracking-tight text-[#707A99] dark:text-slate-300 mb-8 leading-tight">
             A single platform to <br className="hidden sm:block" />
@@ -61,7 +61,7 @@ export default function Home() {
                 }
               }
             }}
-            className="flex-1 relative w-full h-[500px] lg:h-[700px] hidden lg:block"
+            className="flex-1 relative w-full h-[450px] md:h-[500px] lg:h-[700px] hidden md:block mt-12 lg:mt-0"
           >
             {/* 
                   Cards do not overlap awkwardly.
@@ -69,24 +69,24 @@ export default function Home() {
                   Cards stay within container.
                 */}
 
-            <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 80, damping: 15 } } }} className="absolute z-20 top-[40%] left-[0%] lg:left-[5%] w-max max-w-full">
-              <FloatingCard color="orange" icon={Gavel} label="Matters" className="transform -rotate-6 lg:-rotate-12" animationClass="animate-float-slow" />
+            <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 80, damping: 15 } } }} className="absolute z-20 top-[15%] lg:top-[25%] left-[0%] lg:left-[5%] w-max">
+              <FloatingCard color="orange" icon={Gavel} label="Matters" className="transform -rotate-3 lg:-rotate-6" animationClass="animate-float-slow" />
             </motion.div>
 
-            <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 80, damping: 15 } } }} className="absolute z-30 top-[20%] right-[0%] lg:right-[15%] w-max max-w-full">
-              <FloatingCard color="blue" icon={Receipt} label="Billing" className="transform -rotate-3 lg:-rotate-12" animationClass="animate-float-medium" />
+            <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 80, damping: 15 } } }} className="absolute z-30 top-[0%] lg:top-[10%] right-[0%] lg:right-[10%] w-max">
+              <FloatingCard color="blue" icon={Receipt} label="Billing" className="transform rotate-2 lg:rotate-3" animationClass="animate-float-medium" />
             </motion.div>
 
-            <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 80, damping: 15 } } }} className="absolute z-40 top-[55%] left-[20%] lg:left-[30%] w-max max-w-[95%]">
-              <FloatingCard color="purple" variant="portal" label="John Doe" className="transform rotate-0 lg:-rotate-3" animationClass="animate-float-fast" />
+            <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 80, damping: 15 } } }} className="absolute z-40 top-[40%] lg:top-[45%] left-[15%] lg:left-[25%] w-max">
+              <FloatingCard color="purple" variant="portal" label="John Doe" className="transform -rotate-1 lg:-rotate-2" animationClass="animate-float-fast" />
             </motion.div>
 
-            <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 80, damping: 15 } } }} className="absolute z-20 bottom-[10%] left-[20%] lg:left-[25%] w-max max-w-full">
-              <FloatingCard color="dark" icon={CheckSquare} label="Tasks" className="transform rotate-0" animationClass="animate-float-slow" />
+            <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 80, damping: 15 } } }} className="absolute z-20 bottom-[15%] lg:bottom-[20%] left-[5%] lg:left-[10%] w-max">
+              <FloatingCard color="dark" icon={CheckSquare} label="Tasks" className="transform rotate-1 lg:rotate-2" animationClass="animate-float-slow" />
             </motion.div>
 
-            <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 80, damping: 15 } } }} className="absolute z-10 bottom-[2%] right-[5%] lg:right-[10%] w-max max-w-[95%]">
-              <FloatingCard color="dark" icon={FileText} label="Documents" className="transform -rotate-3 lg:-rotate-6" animationClass="animate-float-medium" />
+            <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 80, damping: 15 } } }} className="absolute z-10 bottom-[0%] lg:bottom-[5%] right-[0%] lg:right-[5%] w-max">
+              <FloatingCard color="dark" icon={FileText} label="Documents" className="transform -rotate-2 lg:-rotate-3" animationClass="animate-float-medium" />
             </motion.div>
           </motion.div>
         )}
