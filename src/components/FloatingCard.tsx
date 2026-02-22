@@ -45,7 +45,7 @@ export const FloatingCard = ({
                     <div className="w-1.5 h-12 lg:h-16 rounded-full bg-[#E17B27] shrink-0" />
                     <div className="relative w-10 h-10 lg:w-12 lg:h-12 rounded-full overflow-hidden bg-white/20 dark:bg-black/20 shrink-0 flex items-center justify-center">
                         <Image
-                            src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&backgroundColor=b6e3f4"
+                            src="/avatar.jpg"
                             alt="John Doe Avatar"
                             width={48}
                             height={48}
